@@ -1,16 +1,19 @@
 <main class="container">
-    <header class="row" id="header-w-image">
-        <img src="../media/burger.png" alt="burger icon" class="img-fluid rounded mt-1">
-        <h1>Burger Logger</h1>
+    <header class="row" id="header-w-image" style="display:flex;flex-direction:column">
+        <img src="assets/img/burger.png" alt="burger icon" class="img-fluid rounded mt-1">
+        <h1>Eat a Burger!</h1>
     </header>
     <section class="row" id="display-area">
         <div class="col-6" id="left">
             <h2>Uneaten Burgers</h2>
+            <hr>
             <ul>
                 {{#each burgers}}
                     {{#unless devoured}}
+                    <li>
                         {{burger_name}}
-                        <button id="devour" data-id="{{id}}" data-newdevoured="{{devoured}}">DEVOUR IT!</button>
+                        <button class="devour btn-sm btn btn-success" data-id="{{id}}" data-newdevoured="{{devoured}}">DEVOUR IT!</button>
+                    </li>
                     {{/unless}}
                 {{/each}}
             </ul>
@@ -18,6 +21,7 @@
 
         <div class="col-6" id="right">
             <h2>Eaten Burgers</h2>
+            <hr>
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
@@ -33,7 +37,7 @@
             <label for="burger">Burger Name:</label>
             <input type="text" id="burger" name="name">
 
-            <button type="submit">Add Burger</button>
+            <button type="submit" class="btn btn-md btn-success">Add Burger</button>
         </form>
     </section>
 </main>

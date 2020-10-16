@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(45deg, #f2da02,#f26202);
+    min-height: 100vh;
+}
+
+#header-w-image {
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#display-area {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    background: rgb(245,238,179,0.5);
+    text-align: center
+}
+
+.devour {
+    margin-left: 10px;
+}
+
+label {
+    font-size:1.2rem;
+    margin-right: 12px;
+}
+
+#form-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+form {
+    margin-top: 1rem;
+}
