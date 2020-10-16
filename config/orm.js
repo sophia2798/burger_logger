@@ -29,6 +29,7 @@ function objToSql(ob) {
     return arr.toString();
 };
 
+// OBJECT FOR ALL SQL FUNCTIONS
 var orm = {
     selectAll: (tableInput, cb) => {
         let queryString = `SELECT * FROM ${tableInput};`;
@@ -59,4 +60,5 @@ var orm = {
     }
 };
 
+// EXPORT
 module.exports = orm;
