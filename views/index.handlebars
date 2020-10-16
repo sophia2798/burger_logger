@@ -12,7 +12,7 @@
                     {{#unless devoured}}
                     <li>
                         {{burger_name}}
-                        <button class="devour btn-sm btn btn-success" data-id="{{id}}" data-newdevoured="{{devoured}}">DEVOUR IT!</button>
+                        <button class="devour btn-sm btn btn-success" data-id="{{id}}">DEVOUR IT!</button>
                     </li>
                     {{/unless}}
                 {{/each}}
@@ -25,7 +25,9 @@
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
+                    <li>
                         {{burger_name}}
+                    </li>
                     {{/if}}
                 {{/each}}
             </ul>
