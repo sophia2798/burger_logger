@@ -77,4 +77,4 @@ Once you run `npm start`, you can view the live page by visiting the following U
     localhost:8080
 
 ## Questions
-If you have any questions, please feel free to reach out via email at sdf. Any further information can be found on my [GitHub Profile](https://github.com/sophia2798) or my [LinkedIn Profile](https://linkedin.com/in/sophia2798).
+If you have any questions, please feel free to reach out via email at sophia2798@gmail.com. Any further information can be found on my [GitHub Profile](https://github.com/sophia2798) or my [LinkedIn Profile](https://linkedin.com/in/sophia2798).
