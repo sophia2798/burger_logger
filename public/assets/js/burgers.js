@@ -17,18 +17,23 @@ $(document).ready(() => {
 
     $("#new-burger").on("submit", event => {
         event.preventDefault();
+        
+        if ($("#burger").val() === "") {
+            alert("You must enter a burger name!")
+        }
+        else {
+            let newBurger = {
+                burger_name: $("#burger").val().trim(),
+                // devoured boolean defaults to false
+            };
 
-        let newBurger = {
-            burger_name: $("#burger").val().trim(),
-            // devoured boolean defaults to false
-        };
-
-        $.ajax("/api/burgers", {
-            type: "POST",
-            data: newBurger
-        }).then(() => {
-            console.log("You created a new burger!");
-            location.reload();
-        });
+            $.ajax("/api/burgers", {
+                type: "POST",
+                data: newBurger
+            }).then(() => {
+                console.log("You created a new burger!");
+                location.reload();
+            });
+        }
     });
 })
